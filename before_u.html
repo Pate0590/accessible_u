@@ -30,15 +30,17 @@
         </ul>
       </nav>
       <a href="/">
-        <img id="logo" src="images/8675309-l-o-g-o-before.png" class="d-block" />
+        <img id="logo" src="images/8675309-l-o-g-o-before.png" class="d-block"/>
       </a>
     </div>
 
     <div class="navbar navbar-expand-lg navbar-dark bg-dark bg-primary md-3">
       <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-label="Toggle Navigation Menu">
           <span class="navbar-toggler-icon"></span>
         </button>
+      </div>
+      
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
@@ -88,7 +90,8 @@
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search">
+            <label for="search-input" class="sr-only">Search</label>
+            <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-success my-2 my-sm-0" type="submit">Go</button>
           </form>
         </div>
@@ -262,11 +265,32 @@
                   <div class="form-group">
                     <div>Desired major(s):</div>
                     <div class="" id="majors">
-                      <div class="major"><input type="checkbox"/> Computer Science </div>
-                      <div class="major"><input type="checkbox"/> Engineering </div>
-                      <div class="major"><input type="checkbox"/> Economics </div>
-                      <div class="major"><input type="checkbox"/> Physics </div>
-                      <div class="major"><input type="checkbox"/> Psychology </div>
+                      <div class="major">
+                        <label>
+                          <input type="checkbox" /> Computer Science
+                        </label>
+                      </div>
+                      <div class="major">
+                        <label>
+                          <input type="checkbox" /> Engineering
+                        </label>
+                      </div>
+                      <div class="major">
+                        <label>
+                          <input type="checkbox" /> Economics
+                        </label>
+                      </div>
+                      <div class="major">
+                        <label>
+                          <input type="checkbox" /> Physics
+                        </label>
+                      </div>
+                      <div class="major">
+                        <label>
+                          <input type="checkbox" /> Psychology
+                        </label>
+                      </div>
+                      
                     </div>
                   </div>
                   <div id="captcha">
